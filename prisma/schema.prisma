@@ -8,8 +8,8 @@ generator client {
 // prisma/schema.prisma
 datasource db {
   provider  = "postgresql"
-  url  	    = env("DATABASE_URL")
-  directUrl = env("DATABASE_URL_UNPOOLED")
+  url  	    = "postgresql://breadit_owner:IyzjibEH5t3K@ep-green-firefly-a24u9sk3-pooler.eu-central-1.aws.neon.tech/breadit?sslmode=require"
+  directUrl = "postgresql://breadit_owner:IyzjibEH5t3K@ep-green-firefly-a24u9sk3.eu-central-1.aws.neon.tech/breadit?sslmode=require"
 }
 
 enum VoteType {
