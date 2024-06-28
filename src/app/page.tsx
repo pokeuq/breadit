@@ -58,7 +58,7 @@ export default async function Home() {
               </p>
             </div>
             <dl className="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
-              <div className="flex flex-col justify-between gap-x-4 py-3 divide-y text-zinc-500 bg-white">
+              <div className="flex flex-col justify-between gap-x-4 py-3 divide-y text-zinc-500">
                 <p className="pb-3">You currently in the lobby.</p>
 
                 <p className="pt-3">
