@@ -6,7 +6,6 @@ Built with the Next.js App Router, TypeScript & Tailwind
 
 ## Features
 
- - Infinite scrolling for dynamically loading posts
  - Authentication using NextAuth & Google
  - Custom feed for authenticated users
  - Advanced caching using [Upstash Redis]
