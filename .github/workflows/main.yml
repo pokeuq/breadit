@@ -1,0 +1,34 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up environment variables
+        run: |
+          echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
+          echo "DATABASE_URL_UNPOOLED=${{ secrets.DATABASE_URL_UNPOOLED }}" >> $GITHUB_ENV
+          echo "NEXTAUTH_SECRET=${{ secrets.NEXTAUTH_SECRET }}" >> $GITHUB_ENV
+          echo "GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "GOOGLE_CLIENT_SECRET=${{ secrets.GOOGLE_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "UPLOADTHING_SECRET=${{ secrets.UPLOADTHING_SECRET }}" >> $GITHUB_ENV
+          echo "UPLOADTHING_APP_ID=${{ secrets.UPLOADTHING_APP_ID }}" >> $GITHUB_ENV
+          echo "REDIS_URL=${{ secrets.REDIS_URL }}" >> $GITHUB_ENV
+          echo "REDIS_SECRET=${{ secrets.REDIS_SECRET }}" >> $GITHUB_ENV
+
+      - name: Install dependencies
+        run: |
+          yarn install
+
+      - name: Build the project
+        run: |
+          yarn build
+
+      - name: Deploy the project
+        run: |
+          yarn deploy
