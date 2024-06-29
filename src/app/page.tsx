@@ -52,18 +52,18 @@ export default async function Home() {
         ) : (
           <div className="overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last">
             <div className="bg-zinc-100 px-6 py-4">
-              <p className="text-zinc-800 font-semibold py-3 flex items-center gap-1.5">
+              <p className="text-zinc-800 font-semibold pb-3 flex items-center gap-1.5">
                 <Globe className="h-4 w-4" />
                 Lobby
               </p>
             </div>
             <dl className="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white">
               <div className="flex flex-col justify-between gap-x-4 pb-3 divide-y text-zinc-500">
-                <p className="pb-3"><b>Sign In</b> to be able create community or subscribe to an
-                  existing one.</p>
+                <p className="pb-3">You currently in the lobby.</p>
 
                 <p className="pt-3">
-                  Please mark the r/<b>communities</b> you want to join before logging in. Sadly, the global feed will not be available after. <br /> <b>Bit u still can search them !</b> 
+                  <b>Sign In</b> to be able create community or subscribe to an
+                  existing one. 
                 </p>
               </div>
             </dl>
