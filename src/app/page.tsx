@@ -63,7 +63,7 @@ export default async function Home() {
                   existing one.</p>
 
                 <p className="pt-3">
-                  Please mark the communities you want to join before logging in. Sadly, the global feed will not be available after. <br /> <b>Bit u still can search them !</b> 
+                  Please mark the r/<b>communities</b> you want to join before logging in. Sadly, the global feed will not be available after. <br /> <b>Bit u still can search them !</b> 
                 </p>
               </div>
             </dl>
