@@ -82,7 +82,7 @@ const PostFeed: FC<PostFeedProps> = ({ initialPosts, subredditName }) => {
               <ShieldAlert className="h-4 w-4" /> No posts
             </p>
           </div>
-          <dl className="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
+          <dl className="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white">
             <div className="flex justify-between gap-x-4 py-3">
               <p className="text-zinc-500">
                 Currently you are not the owner or subscriber to other
