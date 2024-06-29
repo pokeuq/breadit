@@ -58,12 +58,12 @@ export default async function Home() {
               </p>
             </div>
             <dl className="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white">
-              <div className="flex flex-col justify-between gap-x-4 py-3 divide-y text-zinc-500">
-                <p className="pb-3">You currently in the lobby.</p>
+              <div className="flex flex-col justify-between gap-x-4 pb-3 divide-y text-zinc-500">
+                <p className="pb-3"><b>Sign In</b> to be able create community or subscribe to an
+                  existing one.</p>
 
                 <p className="pt-3">
-                  <b>Sign In</b> to be able create community or subscribe to an
-                  existing one.
+                  Please mark the communities you want to join before logging in. Sadly, the global feed will not be available after. Bit u still can search them !
                 </p>
               </div>
             </dl>
