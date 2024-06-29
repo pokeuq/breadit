@@ -1,3 +1,5 @@
+"use client"
+
 import { db } from "@/lib/db";
 import { INFINITE_SCROLL_PAGINATION_RESULTS } from "@/config";
 import { ShieldAlert } from "lucide-react";
